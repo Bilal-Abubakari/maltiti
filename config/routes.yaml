@@ -3,3 +3,17 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+home_page:
+    path: /authentication/index/{name}
+    controller: App\Controller\AuthenticationController::index
+    defaults: 
+        name: 'unknown'
+
+sign_up:
+    path: /authentication/signUp
+    controller: App\Controller\AuthenticationController::signUp
+
+login:
+    path: /authentication/login
+    controller: App\Controller\AuthenticationController::login
