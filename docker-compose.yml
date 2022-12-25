@@ -14,12 +14,12 @@ services:
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./docker/db/data:/var/lib/postgresql/data:rw
 ###< doctrine/doctrine-bundle ###
-  maltiti_image:
-    build: 
-      context: .
-      dockerfile: dockerfile
-    image: maltiti
-    entrypoint: /bin/
+  # maltiti_image:
+  #   build: 
+  #     context: .
+  #     dockerfile: dockerfile
+  #   image: maltiti
+  #   entrypoint: /bin/
 
 volumes:
 ###> doctrine/doctrine-bundle ###
